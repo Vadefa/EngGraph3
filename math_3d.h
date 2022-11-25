@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <math.h>
 
-#define ToRadian(x) ((x) * 3.14f / 180.f)
-#define ToDegree(x) ((x) * 180.f / 3.14f)
+#define ToRadian(x) ((x) * 3.14f / 180.0f)
+#define ToDegree(x) ((x) * 180.0f / 3.14f)
 
 struct Vector2i
 {
