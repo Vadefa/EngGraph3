@@ -70,12 +70,12 @@ static void RenderSceneCB()
 
     glClear(GL_COLOR_BUFFER_BIT);
 
-    static float Scale = 0.0f;
+    static float Rotate = 0.0f;
 
-    Scale += 0.1f;
+    Rotate += 0.03f;
 
     Pipeline p;
-    p.Rotate(0.0f, Scale, 0.0f);
+    p.Rotate(0.0f, Rotate, 0.0f);
     p.WorldPos(0.0f, 0.0f, 3.0f);
     p.SetCamera(pGameCamera->GetPos(), pGameCamera->GetTarget(), pGameCamera->GetUp());
     p.SetPerspectiveProj(60.0f, WINDOW_WIDTH, WINDOW_HEIGHT, 1.0f, 100.0f);
@@ -244,7 +244,7 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    glClearColor(1.0f, 1.0f, 1.0f, 0.0f);
+    glClearColor(0.7f, 0.2f, 0.2f, 0.0f);
 
     glFrontFace(GL_CW);
     glCullFace(GL_BACK);
