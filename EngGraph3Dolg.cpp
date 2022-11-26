@@ -9,8 +9,8 @@
 #include "glut_backend.h"
 #include "util.h"
 
-#define WINDOW_WIDTH  1280
-#define WINDOW_HEIGHT 1024
+#define WINDOW_WIDTH  720
+#define WINDOW_HEIGHT 480
 
 struct Vertex
 {
@@ -99,7 +99,7 @@ public:
 
         glClear(GL_COLOR_BUFFER_BIT);
 
-        m_scale += 0.1f;
+        m_scale += 0.03f;
 
         Pipeline p;
         p.Rotate(0.0f, m_scale, 0.0f);
