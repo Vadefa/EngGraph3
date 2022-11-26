@@ -100,7 +100,7 @@ public:
 
         glClear(GL_COLOR_BUFFER_BIT);
 
-        m_scale += 0.1f;
+        m_scale += 0.03f;
 
         Pipeline p;
         p.Rotate(0.0f, m_scale, 0.0f);
