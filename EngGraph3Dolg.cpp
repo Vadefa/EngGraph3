@@ -9,8 +9,8 @@
 #include "glut_backend.h"
 #include "util.h"
 
-#define WINDOW_WIDTH  1280
-#define WINDOW_HEIGHT 1024
+#define WINDOW_WIDTH  1024
+#define WINDOW_HEIGHT 720
 
 struct Vertex
 {
@@ -97,7 +97,7 @@ public:
 
         glClear(GL_COLOR_BUFFER_BIT);
 
-        m_scale += 0.01f;
+        m_scale += 0.001f;
 
         PointLight pl[3];
         pl[0].DiffuseIntensity = 0.5f;
